@@ -1,0 +1,210 @@
+.search-bar {
+  font-size: 18px;  
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  background-color: rgb(240, 240,240);
+
+  border: 1px solid rgb(167, 166, 166);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.07); 
+  width: 0;
+  margin-left: 80px;
+  z-index: 100;
+
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+
+}
+
+.header {
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(192, 191, 191);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+
+
+.leftSection {
+  display: flex;
+  align-items: center;
+
+}
+
+.middleSection {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+
+}
+
+.searchButton .tooltip {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: orangered;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  height: 20px;
+  width: 50px;
+  bottom: -35px;
+  left: 6px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.searchButton:hover .tooltip{
+  opacity: 1;
+
+}
+
+
+.twitterIcon {
+  height: 40px;
+  margin-left: 20px;
+}
+
+.searchButton {
+  position: relative;
+  height: 40px;
+  width: 80px;
+  background-color: rgb(240, 240,240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192,192);
+  margin-left: -1px;
+  margin-right: 8px;
+
+}
+
+.searchButton img {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  left: 25px;
+  bottom: 5px;
+}
+
+
+.lilyButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.lilyButton .tooltip {
+  position: absolute;
+  background-color: rgb(11, 175, 190);
+  color: white;
+  bottom: -24px;
+  right: 3px;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.lilyButton:hover .tooltip {
+  opacity: 1;
+}
+
+
+.lilyButton:hover {
+  cursor: pointer;
+
+}
+
+.lilyButtonIcon {
+  height: 36px;
+  width: 36px;
+  margin-left: -6px;
+  border-radius: 18px;
+}
+
+.rightSection {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 18px;
+  flex-shrink: 0;
+
+
+
+}
+
+
+.notificationIcon {
+  height: 47px;
+  margin-top: 4px;
+}
+
+.sparkleIcon {
+  height: 46px;
+  padding-right: 9px;
+}
+
+.gizmoPFP {
+  height: 36px;
+  border-radius: 18px;
+}
+
+.notificationBox{
+  position: relative;
+
+}
+.notifications {
+  font-size: 9px;
+  background-color: rgb(194, 5, 5);
+  color: white;
+  position: absolute;
+  top: 11px;
+  right: 9px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 50px;
+}
+
+.searchButton:hover {
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.26); 
+  cursor: pointer;
+
+
+}
+
